@@ -25,8 +25,10 @@ img {
   <header class="row">
  
     <div  class="col-lg-12">
+
       <ul class="nav">
         <li ><a class="active" href="#home">Home</a></li>
+
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
@@ -53,15 +55,26 @@ img {
          
           <input type="tel" placeholder="Enter phone number" name="phone" required>
           <input type="number" placeholder="Enter grade" name="grade" min="50" max="100" required>
-          
-           
+       
+   
          
+         
+
+           
+          <!--   <label for="Male"><strong>Male</strong></label>
+  
+          <input type="radio"  id="Male" name="gender" value="male">
+
+          <label for="Female"><strong>Female</strong></label>
+            <input type="radio" id="Female" name="gender" value="female"> -->
+
 
           <label for="gender" style="font-size: 20px;" class="label"><strong>gender</strong></label>
           <select name="gender" id="gender" name="gender">
               <option value="male">male</option>
               <option value="female">female</option>
             </select>
+
             <div>
             <label for="gender" style="font-size: 20px;" class="label"><strong>Administration</strong></label>
             <select id="usermajor"  name="usermajor" > 
@@ -77,6 +90,10 @@ img {
             <input id="subinput0" type="submit" value="Add" >
 
         </div>
+
+
+          <button type="submit" class="btn">Login</button>
+
         </form>
   </div>
   </div>
@@ -89,6 +106,7 @@ img {
     
     
     <div class="col-lg-12">
+
       <div class="WelcomeContainer">
         <h3>students informations</h3>
        </div>
@@ -98,6 +116,39 @@ img {
     <div id="student_card">
   
     
+
+      
+      <!-- <table style="width:100%">
+        <tr>
+          <th>Full name</th>
+          <th>Date of birth</th>
+          <th>gender</th>
+          <th> phone number</th>
+          <th>grade</th>
+        
+        </tr>
+        <tr id="userInput">
+  
+  </tr>
+
+  </table> -->
+  <div id="table">
+    <table id="tab" style="width:100%">
+        <tr>
+            <th class="th">full name</th>
+            <th class="th">phone number</th>
+            <th class="th">grade</th>
+            <th class="th">date</th>
+            <th class="th">gender</th>
+        </tr>
+        <tbody id="tab0">
+
+        </tbody>
+    </table>
+</div>
+ 
+  
+
           </div>
         
   </div>

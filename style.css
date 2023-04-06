@@ -8,6 +8,7 @@ main{
 }
 
 .nav {
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@ main{
 
 }
 .nav li a {
+
   display: block;
   color: white;
   text-align: center;
@@ -64,6 +66,7 @@ select{
 
 /* Set a style for the submit button */
 #subinput0{
+
   background-color: #1d1f1e;
   color: white;
   padding: 16px 20px;
@@ -87,6 +90,7 @@ select{
 
 
 /* table, th, td {
+
   border: 1px solid black;
   border-collapse: collapse;
   font-size:18px;
@@ -184,3 +188,4 @@ ul {
 
     
 }
+

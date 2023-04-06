@@ -25,8 +25,10 @@ img {
   <header class="row">
  
     <div  class="col-lg-12">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
+
+      <ul class="nav">
+        <li ><a class="active" href="#home">Home</a></li>
+
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
@@ -53,7 +55,11 @@ img {
          
           <input type="tel" placeholder="Enter phone number" name="phone" required>
           <input type="number" placeholder="Enter grade" name="grade" min="50" max="100" required>
-          
+       
+   
+         
+         
+
            
           <!--   <label for="Male"><strong>Male</strong></label>
   
@@ -62,13 +68,32 @@ img {
           <label for="Female"><strong>Female</strong></label>
             <input type="radio" id="Female" name="gender" value="female"> -->
 
+
           <label for="gender" style="font-size: 20px;" class="label"><strong>gender</strong></label>
           <select name="gender" id="gender" name="gender">
               <option value="male">male</option>
               <option value="female">female</option>
             </select>
 
+            <div>
+            <label for="gender" style="font-size: 20px;" class="label"><strong>Administration</strong></label>
+            <select id="usermajor"  name="usermajor" > 
+          
+              <option value="IT">IT</option>
+              <option value="Science">Science</option>
+              <option value="Art">Art</option>
+              </select>
+            </div>
+              <input id="userimg" name="userimg" value="http://cdn.onlinewebfonts.com/svg/img_379085.png" placeholder="user image src"  type="text" id="category_0" required>
+
+          <div class="inputs">
+            <input id="subinput0" type="submit" value="Add" >
+
+        </div>
+
+
           <button type="submit" class="btn">Login</button>
+
         </form>
   </div>
   </div>
@@ -81,6 +106,17 @@ img {
     
     
     <div class="col-lg-12">
+
+      <div class="WelcomeContainer">
+        <h3>students informations</h3>
+       </div>
+  
+  <div style="min-height: 25rem;">
+  
+    <div id="student_card">
+  
+    
+
       
       <!-- <table style="width:100%">
         <tr>
@@ -112,6 +148,7 @@ img {
 </div>
  
   
+
           </div>
         
   </div>

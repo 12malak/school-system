@@ -1,4 +1,3 @@
-
 body {margin:0;}
 main{
   height: 100%;
@@ -8,19 +7,22 @@ main{
   box-sizing: border-box;
 }
 
-ul {
+.nav {
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #2e2b2b;
+  background-color: #242222;
 }
 
-li {
+
+.nav li{
   float: left;
-}
 
-li a {
+}
+.nav li a {
+
   display: block;
   color: white;
   text-align: center;
@@ -28,7 +30,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nav li a:hover {
   background-color: #111;
 }
 /* end nav */
@@ -63,7 +65,8 @@ select{
 }
 
 /* Set a style for the submit button */
-.btn {
+#subinput0{
+
   background-color: #1d1f1e;
   color: white;
   padding: 16px 20px;
@@ -86,7 +89,8 @@ select{
 }
 
 
-table, th, td {
+/* table, th, td {
+
   border: 1px solid black;
   border-collapse: collapse;
   font-size:18px;
@@ -102,5 +106,86 @@ th:nth-child(even),td:nth-child(even) {
 th:nth-child(odd),td:nth-child(odd) {
   background-color:rgb(237, 200, 161);
 
+} */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:300px;
+ margin-left: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container3 {
+  padding: 2px 16px;
+}
+
+.WelcomeContainer h2,h3{
+  text-align: center;
+ }
+ #logo_image{
+  border: 1px solid rgb(242, 247, 247);;
+  border-radius: 50%;
+
+}
+
+#student_card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+#student_card div{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background:rgb(179, 134, 77);
+padding: 0.5rem;
+border: 1px solid #080808;
+border-radius: 0.5rem;
+font-size: 20px;
+}
+#student_card div img{
+  width: 100px;
+  height: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 1000px) {
+  .inputs{
+     flex-direction: column;
+  } 
+
+
+  input{
+      width: 70%;
+      height: 10%;
+      margin-bottom: 5px;
+      }
+       input,select{
+      width: 71%;
+      height: 10%;
+      margin-bottom: 5px;
+      }
+
+
+   
+      #student_card{
+        
+          grid-template-columns: repeat(2,1fr);
+      
+      }
+     
+
+    
 }
 
